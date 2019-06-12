@@ -31,7 +31,7 @@ header {
   border-radius: 40px;
   margin-left: 25px;
   height: 45px;
-  width: 600px;
+  width: 640px;
 }
 
 #search-bar input {
@@ -95,8 +95,8 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  height: 50px;
-  width: 600px;
+  height: 40px;
+  width: 640px;
   margin-left: 150px;
 }
 
@@ -105,14 +105,14 @@ a {
   text-decoration: none;
   font-size: 13px;
   margin: 0;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
 #left a:first-child {
   color: #1a73e8;
   border-bottom: 3px solid #1a73e8;
   font-weight: bold;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 #left a:first-child:hover {
   color: #1a73e8;
@@ -135,7 +135,7 @@ a {
 }
 
 footer {
-  position: absolute;
+  position: relative;
   width: 100%;
   background: #f2f2f2;
   left: 0;
@@ -198,4 +198,84 @@ footer a:hover {
 #bottom a {
   margin-left: 0;
   margin-right: 20px;
+}
+
+main {
+  width: 640px;
+  margin-left: 150px;
+}
+
+main a {
+  text-decoration: none;
+}
+
+#result-stats {
+  line-height: 43px;
+  padding-left: 16px;
+  padding-right: 8px;
+  font-size: small;
+  color: #777;
+}
+
+#main-result {
+  border: 1px solid #e4e4e4;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 26px;
+}
+
+.result-big {
+  font-size: 16px;
+  line-height: 1.375;
+  padding-bottom: 15px;
+}
+
+#main-result a {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 0;
+}
+
+#main-result a h3,
+.result h3 {
+  font-size: 18px;
+  line-height: 1.33;
+  color: #1a0dab;
+  font-weight: normal;
+}
+
+#main-result a cite,
+.result cite {
+  font-size: 14px;
+  line-height: 1.43;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  color: #006621;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.result {
+  padding-left: 16px;
+  margin-bottom: 26px;
+}
+
+.result a {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 0;
+}
+
+.result a h3:hover,
+.result a cite:hover ~ h3,
+#main-result a h3:hover,
+#main-result a cite:hover ~ h3 {
+  text-decoration: underline;
+}
+
+.result p {
+  line-height: 1.54;
+  color: #545454;
+  word-wrap: break-word;
+  font-size: small;
 }
