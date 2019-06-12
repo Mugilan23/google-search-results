@@ -279,3 +279,10 @@ main a {
   word-wrap: break-word;
   font-size: small;
 }
+
+#search-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
